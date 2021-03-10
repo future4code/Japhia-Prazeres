@@ -1,0 +1,86 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.625em;
+    position: relative;
+    text-align: center;
+    background-image: url("./Imagem/pginicial2.jpg");
+    background-size: 100%;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* pagina inicial */
+.inicio{
+    background-color:transparent;
+    overflow: hidden;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 1,5vw;
+    color: white;
+ 
+}
+    
+.footer{
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-family: "Lucida handwriting", cursive;    
+}
+/* topo tds as paginas */
+.inicio2{
+    background-color:transparent;
+    overflow: hidden;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1vw;
+    color: white;
+}
+
+.topnav{
+    background-color: white;
+    overflow: hidden;
+}
+.topnav a {
+    float: center;
+    width: 100%;
+    bottom: 0;
+    color:black;
+    text-align: center;
+    padding: 44px 46px;
+    text-decoration: none;
+    font-size: 2vw; 
+}
+.topnav a:hover {
+    background-color:grey;
+    color: white
+}
+.topnav a.active {
+    background-color:blue;
+    color: white;
+}
+
+/* controle de estoque - table layout */
+#titulo-estoque{
+    color: white;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+
+  }
+
+
