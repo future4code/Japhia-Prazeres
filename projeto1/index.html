@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Japhia Prazeres 😎</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69f61f7444.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="banner" id="sec">
+        <header>    
+            <a href="#" class="logo">HOME</a><!-- criar e add logo --> 
+            <div id="toggle" onclick="toggle ()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello Word,<br>I'm <span>Japhia Prazeres</span></h2>
+            <p>Front End Web Developer.<br></p>
+            <a href="./aboutMe.html">Know More</a>
+            <ul class="sci">
+                <li class="item-social-media"><a href="https://github.com/PrazeresJaphia"><i class="fab fa-github-alt"></i></a></li>
+                <li class="item-social-media"><a href="https://www.linkedin.com/in/japhiaprazeres/"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="item-social-media"><a href="https://www.instagram.com/jackieprazeres/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+       
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutMe.html">About Me</a></li>
+            <li><a href="./projects.html">projects</a></li>
+            <li><a href="./startNewProject.html">Start New Project</a></li>
+        </ul> <!-- lista de navegação -->
+    </div>
+    <script type="text/javascript">
+        function toggle (){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

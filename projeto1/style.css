@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10000;
+    transition: 0.6s;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} /* ajustar logo */
+header #toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+header #toggle:before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+header #toggle:after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+.banner.active header #toggle:before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    transform: rotate(45deg);
+} 
+.banner.active header #toggle:after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    transform: rotate(-45deg);
+} /* menu animado em x*/
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background-image:url('./Imagem/banner4.jpeg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+.banner.active{
+    transform: translate(-400px);
+}
+#navigation{
+    position:fixed;
+    top:0;
+    right: -200px;
+    width: 400px;
+    height:100vh;
+    background: black;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+#navigation.active{
+    right: 0;
+}
+#navigation ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li{
+    list-style: none;
+}
+#navigation ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#navigation ul li a:hover{
+    color: rgb(204, 19, 19);
+}
+.content{
+    max-width: 600px;
+}
+.content h2{
+    color: black;
+    font-size: 2.5em;
+}
+.content h2 span{
+    color: rgb(204, 19, 19);
+    font-size: 1.2em;
+}
+.content p{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.content a{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;   
+    font-weight: 500;
+}
+.content a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.sci{
+    display: flex;
+    flex-direction: row;
+    right: 0px;
+    align-content:flex-start;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    position: relative;
+    display: inline-block;
+    top: 100px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    margin: 5px 5px;
+    color: white;
+    background-color: black;
+}
+.sci li a:hover{
+    background-color: white;
+}
+.sci li a img{
+    max-width: 40px;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+/*Start New Project*/
+.contact{
+	padding: 80px 0;
+	position: relative;
+	z-index:1;
+}
+.contact:before{
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 0;
+	top:0;
+	left: 0;
+	background:black;
+	z-index: -1;
+}
+.contact-items h5{
+	color: black;
+	font-size: 40px;
+	margin-bottom: 18px;
+}
+.contact-items input[type="text"]{
+	border-radius:10px;
+	margin-bottom: 15px;
+	padding: 15px;
+	width:50%;
+}
+.contact-items input[type="email"]{
+	border-radius:10px;
+	margin-bottom: 15px;
+	padding: 15px;
+	width:50%;
+}
+.contact-items textarea{
+	border-radius: 10px;
+	height: 150px;
+	padding: 15px;
+	width: 50%;
+}
+.contact-items a{
+	background:black;
+	color: white;
+	display: block;
+    text-align: center;
+    cursor: pointer;
+	border-radius:10px;
+	margin-bottom: 15px;
+	padding: 15px;
+	width:50%;
+}
+.contact-items a:hover{
+    background:black;
+	color: rgba(255, 0, 0, 0.712);
+}
+h2 span{
+    color: red;
+}
+.btn button[type="button"]{
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    text-align: center;    
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+	outline: none;
+	border:none;
+}
+.btn button[type="button"]:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* AboutMe */
+.aboutme img{
+	height: 150px;
+}
+.text-aboutme{
+	width: 800px;
+    padding: 0 0;
+}
+.text-aboutme span{
+	color: red;
+}
+.text-aboutme button{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.text-aboutme button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* projects */
+.box1{
+	width: 550px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+	display: flex;
+	justify-content: center;
+	align-items:  center;
+	flex-direction: column;
+}
+.conteudo-box {
+	display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;	
+}
+.box1 span{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	margin-top: 10px;	
+}
+.box1 img{
+    width: 450px;
+    padding: auto;
+}
+
+.box1 button{
+	width: 100px;
+	height: 40px;
+	background-color: black;
+    color: white;
+	border:none;
+	outline: none;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.box1 button:hover{
+	border: 2px solid black;
+	background-color:white;
+	color: black;
+}
+
+/* respinsividade */
+@media (max-width: 767px){
+    .header{
+        padding: 20px 50px;
+    }
+    .banner, .aboutme img, .box1, .conteudo-box {
+        padding: 100px 50px 150px;  
+    }
+    .banner h2, .aboutme img, .box1, .conteudo-box {
+        font-size: 1.8em;
+    }
+    .banner .content p,
+    .banner .content a, .aboutme img, .box1, .conteudo-box{
+        font-size: 1em;
+    }
+    .banner.active{
+        transform: translate(-250px);
+    }
+    #navigation, .text-aboutme, .conteudo-box, .box1 img{
+        width: 250px;
+    }
+    #navigation ul li a, .text-aboutme, .conteudo-box, .box1 img{
+        font-size: 1.5em;
+        padding: 5px 30px;
+    }
+    .sci{
+        position: absolute;
+        bottom: 50px;
+        right: initial;
+        flex-direction: row;
+    }
+    .sci li a{
+        margin: initial;
+        margin-right: 10px;
+    }
+}

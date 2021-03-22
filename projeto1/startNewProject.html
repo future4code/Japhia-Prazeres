@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Japhia Prazeres 😎</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69f61f7444.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="backgroud">
+    <section class="banner" id="sec">
+        <header>    
+            <a href="#" class="logo"><img src="" alt="">START NEW PROJECT</a>
+            <div id="toggle" onclick="toggle ()"></div>
+        </header>
+        <div class="contact">
+            <div class="contact-text">
+                <h2>I'd love to build something amazing <span>together!</span></h2>
+                <i class="far fa-envelope"></i> japhiaprazeres@gmail.com <br>
+                <i class="fas fa-phone"></i> +55(11)9XXX-XXXX
+                <div class="contact-items">
+                <br><br> <h2>How can help?</h2>
+                <section class="btn">
+                <button type="button">Website</button>
+                <button type="button">eComerce</button>
+                <button type="button">Digital product</button>
+                <button type="button">Other</button>
+                </section>
+                <section>
+                <input type="text" name="text" placeholder="Full Name*">
+                <input type="text" name="number" placeholder="contact No*">
+                <input type="email" name="email" placeholder="Email*">
+                <textarea cols="20" rows="20" placeholder="YOUR MESSAGE HERE..."></textarea>
+                <a href="#">Send</a>
+                </section>
+           </div>
+         </div>
+      </div>
+
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutMe.html">About Me</a></li>
+            <li><a href="./projects.html">projects</a></li>
+            <li><a href="./startNewProject.html">Start New Project</a></li>
+        </ul> <!-- lista de navegação -->
+    </div>
+    <script type="text/javascript">
+        function toggle (){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+    </div>
+</body>
+</html>

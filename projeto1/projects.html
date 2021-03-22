@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Japhia Prazeres 😎</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69f61f7444.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>    
+            <a href="#" class="logo"><img src="" alt="">PROJECTS</a><!-- criar e add logo com link para "about me" --> 
+            <div id="toggle" onclick="toggle ()"></div>
+        </header>
+
+        <div class="servicos"> <!-- Serviços -->
+             <div class="conteudo-box">
+                <div class="box1">
+                    <span>1</span>
+                    <p class="headid">PROJETO SELETIVO</p>
+                    <img src="./Imagem/projeto seletivo.jpeg">
+                    <br><button>Saiba mais</button><!-- add algun efeito -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutMe.html">About Me</a></li>
+            <li><a href="./projects.html">projects</a></li>
+            <li><a href="./startNewProject.html">Start New Project</a></li>
+        </ul> <!-- lista de navegação -->
+    </div>
+    <script type="text/javascript">
+        function toggle (){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
