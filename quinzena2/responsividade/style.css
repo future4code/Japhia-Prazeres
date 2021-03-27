@@ -1,0 +1,124 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+div{
+    border: 1px solid black;
+    display: grid;
+}
+#main-container{
+    grid-template-columns: 1fr;
+    border: none;
+}
+#frist-block{
+    background-color: red;
+    width: 100vw;
+    height: 10vh;
+    border: none;
+}
+
+#secound-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    border: none;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+.blue-box{
+    background-color: blue;
+    width: 100%;
+    padding-bottom:25%
+}
+.yellow-box{
+    background-color: yellow;
+    width: 100%;
+    padding-bottom:25%
+}
+.green-box{
+    background-color: green;
+    width: 100%;
+    padding-bottom:25%
+}
+
+#third-block{
+    display: grid;
+    grid-template:  1fr / 1fr 1fr;
+    border: none;
+    gap: 10px;
+    padding: 10px;
+}
+.black-box{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-bottom:50%
+}
+
+#fourth-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    border: none;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+}
+.white-box, .white-box11{
+    width: 100%;
+    padding-bottom:25%
+}
+
+@media (max-device-width: 420px){
+
+    .blue-box, .yellow-box, .green-box {
+        grid-row: 100%;
+        grid-column: 1 / -1;
+        height: 15%;
+    }
+    #third-block{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #fourth-block{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    } 
+    .white-box11{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }   
+}
+
+@media (min-device-width: 421px) and (max-device-width: 800px){
+   
+    #secound-block{
+        grid-template-columns: auto 0% auto;
+        grid-template-rows: [row1-start] 25vw [row1-end] 25vw [third-line] 25vw [last-line];
+    }
+    .blue-box{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .yellow-box{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .green-box {
+        grid-column: 1 / -1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #fourth-block{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .white-box11{
+        grid-column: 1 / -1;
+    }   
+}
