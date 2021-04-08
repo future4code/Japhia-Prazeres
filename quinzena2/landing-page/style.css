@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 100%;
+    padding: 0 30px;
+    margin: auto;
+}
+
+
+/* barra de navegação */
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    font-family: sans-serif;
+    padding: 15px 40px;
+}
+
+/* menu fixo em scroll */
+.navbar.sticky{
+    padding: 15px 40px;
+    background: white;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo{
+    color: brown;
+    font-size: 2em;
+    font-weight: 600;
+}   
+img{
+    width: 150px;
+    height: 70px;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:black;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+.navbar .menu li a:hover{
+    color:brown;
+    font-weight: bold;
+}
+
+
+/* seção inicial */
+.home{
+    display: flex;
+    background-color: white;
+    height: 100vh;
+    color: black;
+    font-family: sans-serif;
+}
+.home .max-width{
+    margin: auto;
+}
+.text1{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: center;
+}
+.text2{
+    font-size: 2.6em;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+}
+.text3{
+    font-size: 1.6em;
+    font-weight: 400;
+    text-align: center;
+    color: grey;
+}
+
+
+/* Botões */
+.btn-top{
+    display: block;
+    background-color: brown;
+    padding: 5px 5px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 25px;
+    text-align: center;
+    border: 2px solid gray;
+    scroll-behavior: smooth
+}
+.btn-top a{
+    text-decoration: none;
+    color: white;
+}
+.menu-btn{
+    color: black;
+    font-size: 30px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 30px 0;
+}
+button{
+    border: none;	
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    padding: 15px 60px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: color 0.3s ease;
+}
+button:hover{
+    border: 1px solid brown;
+    background-color: white;
+    color: brown;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.about-btn{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px 0;
+}
+.about-button{
+    border: none;	
+    background-color: white;
+    color: brown;
+    cursor: pointer;
+    padding: 15px 60px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: color 0.3s;
+}
+.about-button:hover{
+    border: 1px solid white;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* seção como funciona */
+.how{
+    font-family: sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 3em;
+    padding: 20px 0 15px;
+}
+.sub-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: gray;
+    font-size: 1.6em;
+}
+.how-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 1200px;
+}
+.column.left {
+    width: 300px;
+}
+.number{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+.number1, .number2, .number3{
+    width: 330px;
+    display: -webkit-inline-box;
+    margin-top: 30px;
+}
+p{
+    padding: 40px 90px 10px 10px;
+}
+span{
+    font-weight: bold;
+}
+span, p{
+    font-size: 1.2em;
+    align-items: center;
+}
+.column.right {
+    width: 230px;
+}
+.img-how{
+    margin-top: 30px;
+    width: 450px;
+    height: 500px;
+}
+
+
+/* seção sobre nós */
+.about-us{
+    display: flex;
+    background: 100%;
+    background-color: brown;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+}
+.about-us-content{
+    padding: 40px 80px 40px 80px;
+}
+.about-us .max-width{
+    margin: auto;
+}
+.text01{
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.text02, .text03, .text04 {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+
+/* sobre o produto */
+.about .about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 1200px;
+}
+.title1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3em;
+    padding: 70px 40px;
+}
+.about .about-content .left{
+    width: 45%;
+    padding: 10px 50px 40px 80px ;
+
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 200px;
+    border: 2px solid brown;
+}
+.about .about-content .right{
+    width: 55%;
+    padding: 90px 50px 40px 80px ;
+}
+.about .about-content .right .text5{
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: brown;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 60px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-family: sans-serif;
+    }
+.about .about-content .right a:hover{
+    color: brown;
+    border: 2px solid brown;
+    background: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* FAQ/Contato */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.contact{
+    background-color: brown;
+    padding: 80px 80px 30px 30px;
+}
+.faq{
+    text-align: center;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.faq:hover{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.contact-text h2{
+	color: white;
+	font-size: 3em;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
+.contact-text h6{
+    color: white;
+	font-size: 1.4em;
+    font-family: sans-serif;
+}
+.cnt-text{
+    color: white;
+	font-size: 1.2em;
+    font-family: sans-serif;
+    padding: 10px 50px 10px 0px;
+}
+.spn{
+    color: white;
+	font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.contact-items input[type="text"]{
+	border-radius:10px;
+	margin-bottom: 15px;
+	padding: 15px;
+	width:50%;
+}
+.contact-items input[type="email"]{
+	border-radius:10px;
+	margin-bottom: 15px;
+	padding: 15px;
+	width:50%;
+}
+.contact-items textarea{
+    font-family: sans-serif;
+    font-size: 1em;
+	border-radius: 10px;
+	height: 150px;
+	padding: 15px;
+	width: 50%;
+}
+.contact-items .send{
+	background:white;
+	color: brown;
+    font-family: sans-serif;
+    font-size: 1.2em;
+	display: block;
+    text-align: center;
+    cursor: pointer;
+	border-radius:10px;
+	margin-bottom: 15px;
+	padding: 15px;
+	width:50%;
+}
+.contact-items .send:hover{
+    background:brown;
+    border: 2px solid white;
+	color: white;
+    text-decoration: underline;
+}
+
+/* footer */
+footer, .formulario{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    background-color: white;  
+    padding: 20px 0 30px;
+}
+footer .icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.fab{
+    background-color:  brown;
+    color: white;
+    border: 3px solid brown;
+    border-radius: 50%;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+}
+footer a{
+    color: #000;
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+footer h3{
+    text-align: center;
+}
+
+.questions{
+    font-family: sans-serif;
+    font-size: 1em;
+    width: 1300px;
+    height: 1400px;
+    padding: 100px 0 0 40px;
+}
+
+/* barra de scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: lightcoral;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(59, 1, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: brown;
+}
+
+/* responsividade */
+@media (max-width:928px){
+    .max-width{
+        padding: 0 30px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: brown;
+        text-align: center;
+        padding-top: 50px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 1.6em;
+        color: white;
+    }
+    .navbar .menu li a:hover{
+        color: black;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content .btn{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about-us .about-us-content{
+        width: 100%;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }  
+    .btn-top{
+        display: none; 
+    }
+}
